@@ -1,4 +1,4 @@
-namespace Item
+namespace Items.Item
 {
     public class Item
     {
@@ -6,6 +6,6 @@ namespace Item
         protected int sellIn;
         protected int quality;
         
-        protected void Tick() {}
+        protected virtual void UpdateQuality() {}
     }
 }

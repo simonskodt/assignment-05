@@ -118,5 +118,4 @@ namespace GildedRose.Console
 
         public int Quality { get; set; }
     }
-
 }
