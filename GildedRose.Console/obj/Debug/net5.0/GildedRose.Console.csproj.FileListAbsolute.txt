@@ -1,0 +1,16 @@
+c:\Users\simon\OneDrive\Skrivebord\3_semester\BGSA\assignment_5\assignement_05\GildedRose.Console\bin\Debug\net5.0\GildedRose.Console.exe
+c:\Users\simon\OneDrive\Skrivebord\3_semester\BGSA\assignment_5\assignement_05\GildedRose.Console\bin\Debug\net5.0\GildedRose.Console.deps.json
+c:\Users\simon\OneDrive\Skrivebord\3_semester\BGSA\assignment_5\assignement_05\GildedRose.Console\bin\Debug\net5.0\GildedRose.Console.runtimeconfig.json
+c:\Users\simon\OneDrive\Skrivebord\3_semester\BGSA\assignment_5\assignement_05\GildedRose.Console\bin\Debug\net5.0\GildedRose.Console.runtimeconfig.dev.json
+c:\Users\simon\OneDrive\Skrivebord\3_semester\BGSA\assignment_5\assignement_05\GildedRose.Console\bin\Debug\net5.0\GildedRose.Console.dll
+c:\Users\simon\OneDrive\Skrivebord\3_semester\BGSA\assignment_5\assignement_05\GildedRose.Console\bin\Debug\net5.0\ref\GildedRose.Console.dll
+c:\Users\simon\OneDrive\Skrivebord\3_semester\BGSA\assignment_5\assignement_05\GildedRose.Console\bin\Debug\net5.0\GildedRose.Console.pdb
+c:\Users\simon\OneDrive\Skrivebord\3_semester\BGSA\assignment_5\assignement_05\GildedRose.Console\obj\Debug\net5.0\GildedRose.Console.csproj.AssemblyReference.cache
+c:\Users\simon\OneDrive\Skrivebord\3_semester\BGSA\assignment_5\assignement_05\GildedRose.Console\obj\Debug\net5.0\GildedRose.Console.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\simon\OneDrive\Skrivebord\3_semester\BGSA\assignment_5\assignement_05\GildedRose.Console\obj\Debug\net5.0\GildedRose.Console.AssemblyInfoInputs.cache
+c:\Users\simon\OneDrive\Skrivebord\3_semester\BGSA\assignment_5\assignement_05\GildedRose.Console\obj\Debug\net5.0\GildedRose.Console.AssemblyInfo.cs
+c:\Users\simon\OneDrive\Skrivebord\3_semester\BGSA\assignment_5\assignement_05\GildedRose.Console\obj\Debug\net5.0\GildedRose.Console.csproj.CoreCompileInputs.cache
+c:\Users\simon\OneDrive\Skrivebord\3_semester\BGSA\assignment_5\assignement_05\GildedRose.Console\obj\Debug\net5.0\GildedRose.Console.dll
+c:\Users\simon\OneDrive\Skrivebord\3_semester\BGSA\assignment_5\assignement_05\GildedRose.Console\obj\Debug\net5.0\ref\GildedRose.Console.dll
+c:\Users\simon\OneDrive\Skrivebord\3_semester\BGSA\assignment_5\assignement_05\GildedRose.Console\obj\Debug\net5.0\GildedRose.Console.pdb
+c:\Users\simon\OneDrive\Skrivebord\3_semester\BGSA\assignment_5\assignement_05\GildedRose.Console\obj\Debug\net5.0\GildedRose.Console.genruntimeconfig.cache
