@@ -103,18 +103,7 @@ namespace GildedRose.Console
 
                 if (Items[i].Name.Contains("Conjured"))
                 {
-                    if (Items[i].SellIn <= 10 && Items[i].SellIn > 5)
-                    {
-                        Items[i].Quality = Items[i].Quality - 2;
-                    }
-                    else if (Items[i].SellIn <= 5 && Items[i].SellIn > 0)
-                    {
-                        Items[i].Quality = Items[i].Quality - 3;
-                    }
-                    else if (Items[i].SellIn == 0)
-                    {
-                        Items[i].Quality = 0;
-                    }
+                    Items[i].Quality = Items[i].Quality - 2;
                 }
             }
         }
