@@ -113,7 +113,7 @@ namespace GildedRose.Tests
         }
 
         [Fact]
-        public void AgidBrie_getting_older_Returns_incresing_Quality()
+        public void AgedBrie_getting_older_Returns_incresing_Quality()
         {
             int expected = 1;
 
@@ -214,6 +214,46 @@ namespace GildedRose.Tests
             int actual = program.Items[5].Quality;
 
             Assert.NotEqual(expected, actual);
+        }
+
+        // Extra tests to increase the branch-coverage
+        [Fact]
+        public void Extra_normal_less_than_0_Returns_not_decremented()
+        {
+            // If not Aged Brie, Backstage and Sulfuras, then do
+
+            for (int i = 0; i < 3; i++)
+                program.UpdateQuality();
+
+            int actual = program.Items[2].Quality;
+
+            Assert.False(actual < 0);
+        }
+
+        [Fact]
+        public void Extra_Backstage_SellIn_less_11_Quality_less_50_Returns_Quality_increment_by_2()
+        {
+            Item item = new Item {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 10, Quality = 48};
+            program.Items.Add(item);
+
+            program.UpdateQuality();
+
+            int actual = program.Items[6].Quality;
+
+            Assert.True(actual == 50);
+        }
+
+        [Fact]
+        public void Extra_Backstage_SellIn_less_11_Quality__at_49_Returns_Quality_increment_by_1()
+        {
+            Item item = new Item {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 10, Quality = 49};
+            program.Items.Add(item);
+
+            program.UpdateQuality();
+
+            int actual = program.Items[6].Quality;
+
+            Assert.True(actual == 50);
         }
     }   
 }
