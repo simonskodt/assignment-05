@@ -1,5 +1,9 @@
 # Assignment #5
 
+Task to be completed by us<br>
+[x] Build up a test suite<br>
+[ ] Complete refactoring.
+
 ## C#: Gilded Rose Refactoring Kata
 
 Hi and welcome to team Gilded Rose. As you know, we are a small inn with a
