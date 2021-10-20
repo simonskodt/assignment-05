@@ -16,6 +16,7 @@ namespace GildedRose.Tests
         Program program;
 
         // Constructor for setup
+        // Do not add any other Items to the list due to the other tests adding elements depending on this structure.
         public TestAssemblyTests()
         {
             this.program = new Program()
@@ -89,14 +90,15 @@ namespace GildedRose.Tests
         [Fact]
         public void Sell_date_passed_Returns_Quality_degrades_twice_as_fast()
         {
-            int expected = 1;
+            Item item = new Item {Name = "Elixir of the Mongoose", SellIn = 1, Quality = 11};
+            program.Items.Add(item);
 
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 2; i++)
                 program.UpdateQuality();
 
-            int actual = program.Items[5].Quality;
+            int actual = program.Items[6].Quality;
 
-            Assert.Equal(expected, actual);
+            Assert.True(actual == 8);
         }
 
         [Fact]
@@ -147,10 +149,8 @@ namespace GildedRose.Tests
         }
 
         [Fact]
-        public void BackstagePasses_when_10_days_left_Returns_increase_by_2()
+        public void BackstagePasses_when_10_days_left_Returns_increase_by_2_not_when_AgedBrie()
         {
-            int expected = 8;
-
             Item item = new Item {Name = "Aged Brie", SellIn = 10, Quality = 6};
             program.Items.Add(item);
 
@@ -158,7 +158,62 @@ namespace GildedRose.Tests
 
             int actual = program.Items[6].Quality;
 
-            Assert.Equal(expected, actual);
+            Assert.False(actual == 8);
+        }
+
+        [Fact]
+        public void BackstagePasses_when_10_days_left_Returns_increase_by_2()
+        {
+            Item item = new Item {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 10, Quality = 6};
+            program.Items.Add(item);
+
+            program.UpdateQuality();
+
+            int actual = program.Items[6].Quality;
+
+            Assert.True(actual == 8);
+        }
+
+        [Fact]
+        public void BackstagePasses_when_5_days_left_Returns_increase_by_3()
+        {
+            Item item = new Item {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 5, Quality = 10};
+            program.Items.Add(item);
+
+            program.UpdateQuality();
+
+            int actual = program.Items[6].Quality;
+
+            Assert.True(actual == 13);
+        }
+
+        [Fact]
+        public void BackstagePasses_when_0_days_left_Returns_drops_to_0()
+        {
+            Item item = new Item {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 0, Quality = 3};
+            program.Items.Add(item);
+
+            program.UpdateQuality();
+
+            int actual = program.Items[6].Quality;
+
+            Assert.True(actual == 0);
+        }
+
+        [Fact]
+        public void Conjured_items_Returns_degrade_in_Quality_twice_as_fast()
+        {
+            Item item = new Item {Name = "Elixir of the Mongoose", SellIn = 3, Quality = 6};
+            program.Items.Add(item);
+
+            for (int i = 0; i < 3; i++)
+                program.UpdateQuality();
+
+            int expected = program.Items[6].Quality;
+
+            int actual = program.Items[5].Quality;
+
+            Assert.NotEqual(expected, actual);
         }
     }   
 }
