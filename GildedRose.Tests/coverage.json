@@ -1,0 +1,431 @@
+{
+  "GildedRose.Console.dll": {
+    "C:\\Users\\simon\\OneDrive\\Skrivebord\\3_semester\\BGSA\\assignment_5\\assignement_05\\GildedRose.Console\\Program.cs": {
+      "GildedRose.Console.Program": {
+        "System.Void GildedRose.Console.Program::Main(System.String[])": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "25": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": []
+        },
+        "System.Void GildedRose.Console.Program::UpdateQuality()": {
+          "Lines": {
+            "31": 243,
+            "32": 3424,
+            "33": 1469,
+            "34": 1469,
+            "35": 977,
+            "36": 977,
+            "37": 380,
+            "38": 380,
+            "39": 137,
+            "40": 137,
+            "41": 137,
+            "42": 380,
+            "43": 977,
+            "45": 492,
+            "46": 492,
+            "47": 341,
+            "48": 341,
+            "50": 341,
+            "51": 245,
+            "52": 245,
+            "53": 207,
+            "54": 207,
+            "55": 206,
+            "56": 206,
+            "57": 206,
+            "58": 207,
+            "60": 245,
+            "61": 189,
+            "62": 189,
+            "63": 189,
+            "64": 189,
+            "65": 189,
+            "66": 189,
+            "67": 245,
+            "68": 341,
+            "69": 492,
+            "71": 1469,
+            "72": 1226,
+            "73": 1226,
+            "74": 1226,
+            "76": 1469,
+            "77": 1005,
+            "78": 1005,
+            "79": 785,
+            "80": 785,
+            "81": 609,
+            "82": 609,
+            "83": 19,
+            "84": 19,
+            "85": 19,
+            "86": 19,
+            "87": 19,
+            "88": 19,
+            "89": 609,
+            "91": 176,
+            "92": 176,
+            "93": 176,
+            "94": 785,
+            "96": 220,
+            "97": 220,
+            "98": 72,
+            "99": 72,
+            "100": 72,
+            "101": 220,
+            "102": 1005,
+            "104": 1469,
+            "105": 243,
+            "106": 243,
+            "107": 243,
+            "108": 1469,
+            "109": 243
+          },
+          "Branches": [
+            {
+              "Line": 32,
+              "Offset": 971,
+              "EndOffset": 8,
+              "Path": 1,
+              "Ordinal": 37,
+              "Hits": 1469
+            },
+            {
+              "Line": 34,
+              "Offset": 36,
+              "EndOffset": 38,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1225
+            },
+            {
+              "Line": 34,
+              "Offset": 36,
+              "EndOffset": 67,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 244
+            },
+            {
+              "Line": 34,
+              "Offset": 70,
+              "EndOffset": 72,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 977
+            },
+            {
+              "Line": 36,
+              "Offset": 95,
+              "EndOffset": 97,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 380
+            },
+            {
+              "Line": 38,
+              "Offset": 127,
+              "EndOffset": 129,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 137
+            },
+            {
+              "Line": 38,
+              "Offset": 127,
+              "EndOffset": 168,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 380
+            },
+            {
+              "Line": 36,
+              "Offset": 95,
+              "EndOffset": 169,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 977
+            },
+            {
+              "Line": 34,
+              "Offset": 70,
+              "EndOffset": 175,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 492
+            },
+            {
+              "Line": 46,
+              "Offset": 201,
+              "EndOffset": 206,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 341
+            },
+            {
+              "Line": 50,
+              "Offset": 275,
+              "EndOffset": 280,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 245
+            },
+            {
+              "Line": 52,
+              "Offset": 306,
+              "EndOffset": 308,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 207
+            },
+            {
+              "Line": 54,
+              "Offset": 334,
+              "EndOffset": 336,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 206
+            },
+            {
+              "Line": 54,
+              "Offset": 334,
+              "EndOffset": 375,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 207
+            },
+            {
+              "Line": 52,
+              "Offset": 306,
+              "EndOffset": 376,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 245
+            },
+            {
+              "Line": 60,
+              "Offset": 400,
+              "EndOffset": 402,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 189
+            },
+            {
+              "Line": 62,
+              "Offset": 428,
+              "EndOffset": 430,
+              "Path": 0,
+              "Ordinal": 18,
+              "Hits": 189
+            },
+            {
+              "Line": 62,
+              "Offset": 428,
+              "EndOffset": 469,
+              "Path": 1,
+              "Ordinal": 19,
+              "Hits": 189
+            },
+            {
+              "Line": 60,
+              "Offset": 400,
+              "EndOffset": 470,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 245
+            },
+            {
+              "Line": 50,
+              "Offset": 275,
+              "EndOffset": 471,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 341
+            },
+            {
+              "Line": 46,
+              "Offset": 201,
+              "EndOffset": 472,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 492
+            },
+            {
+              "Line": 71,
+              "Offset": 504,
+              "EndOffset": 506,
+              "Path": 0,
+              "Ordinal": 20,
+              "Hits": 1226
+            },
+            {
+              "Line": 71,
+              "Offset": 504,
+              "EndOffset": 545,
+              "Path": 1,
+              "Ordinal": 21,
+              "Hits": 1469
+            },
+            {
+              "Line": 76,
+              "Offset": 569,
+              "EndOffset": 574,
+              "Path": 0,
+              "Ordinal": 22,
+              "Hits": 1005
+            },
+            {
+              "Line": 78,
+              "Offset": 606,
+              "EndOffset": 611,
+              "Path": 0,
+              "Ordinal": 24,
+              "Hits": 785
+            },
+            {
+              "Line": 80,
+              "Offset": 643,
+              "EndOffset": 645,
+              "Path": 0,
+              "Ordinal": 26,
+              "Hits": 609
+            },
+            {
+              "Line": 82,
+              "Offset": 670,
+              "EndOffset": 672,
+              "Path": 0,
+              "Ordinal": 28,
+              "Hits": 19
+            },
+            {
+              "Line": 84,
+              "Offset": 704,
+              "EndOffset": 706,
+              "Path": 0,
+              "Ordinal": 30,
+              "Hits": 19
+            },
+            {
+              "Line": 84,
+              "Offset": 704,
+              "EndOffset": 745,
+              "Path": 1,
+              "Ordinal": 31,
+              "Hits": 19
+            },
+            {
+              "Line": 82,
+              "Offset": 670,
+              "EndOffset": 746,
+              "Path": 1,
+              "Ordinal": 29,
+              "Hits": 609
+            },
+            {
+              "Line": 80,
+              "Offset": 643,
+              "EndOffset": 749,
+              "Path": 1,
+              "Ordinal": 27,
+              "Hits": 176
+            },
+            {
+              "Line": 78,
+              "Offset": 606,
+              "EndOffset": 807,
+              "Path": 1,
+              "Ordinal": 25,
+              "Hits": 220
+            },
+            {
+              "Line": 97,
+              "Offset": 833,
+              "EndOffset": 835,
+              "Path": 0,
+              "Ordinal": 32,
+              "Hits": 72
+            },
+            {
+              "Line": 97,
+              "Offset": 833,
+              "EndOffset": 874,
+              "Path": 1,
+              "Ordinal": 33,
+              "Hits": 220
+            },
+            {
+              "Line": 76,
+              "Offset": 569,
+              "EndOffset": 876,
+              "Path": 1,
+              "Ordinal": 23,
+              "Hits": 1469
+            },
+            {
+              "Line": 104,
+              "Offset": 907,
+              "EndOffset": 909,
+              "Path": 0,
+              "Ordinal": 34,
+              "Hits": 243
+            },
+            {
+              "Line": 104,
+              "Offset": 907,
+              "EndOffset": 948,
+              "Path": 1,
+              "Ordinal": 35,
+              "Hits": 1469
+            },
+            {
+              "Line": 32,
+              "Offset": 971,
+              "EndOffset": 976,
+              "Path": 0,
+              "Ordinal": 36,
+              "Hits": 243
+            }
+          ]
+        }
+      },
+      "GildedRose.Console.Item": {
+        "System.String GildedRose.Console.Item::get_Name()": {
+          "Lines": {
+            "115": 8272
+          },
+          "Branches": []
+        },
+        "System.Int32 GildedRose.Console.Item::get_SellIn()": {
+          "Lines": {
+            "117": 4523
+          },
+          "Branches": []
+        },
+        "System.Int32 GildedRose.Console.Item::get_Quality()": {
+          "Lines": {
+            "119": 5762
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
