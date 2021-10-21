@@ -1,10 +1,26 @@
-namespace Items.Item.Normal
+using Items.Interface;
+using Items.GeneralItem;
+
+namespace Items
 {
-    public class Normal : Item
+    public class Normal : IItem
     {
-        public void UpdateQuality() 
+        Item _item;
+
+        public Normal(Item item)
         {
-            
+            _item = item;
         }
+
+        public virtual void UpdateQuality() 
+        {
+            --_item.SellIn;
+
+            if (_item.SellIn > 0) _item.Quality -= 2;
+
+            else _item.Quality -= 4;
+        }
+
+        
     }
 }

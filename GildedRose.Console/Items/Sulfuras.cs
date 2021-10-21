@@ -1,6 +1,8 @@
-namespace Items.Item.Sulfuras
+using Items.Interface;
+
+namespace Items
 {
-    public class Sulfuras : Item
+    public class Sulfuras : IItem
     {
         public void UpdateQuality() 
         {

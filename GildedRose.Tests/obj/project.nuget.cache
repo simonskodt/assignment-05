@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O7KzZYGawa67JhHURtYQo8BvpaX6lN/US1CkmJO2mKYEv5NrgYSp6ovsXZ6Wuc0Uwp97iPa0bF8CXrmUUB47YA==",
+  "dgSpecHash": "Wsx5UmbOUWsP7M5uXPG2lepApG+dHOKS8coF1Ip8xdPBxPE4jkHNgBkcEyrInhWjCvxv1ivhjJt/clsn1nJsZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\simon\\OneDrive\\Skrivebord\\3_semester\\BGSA\\assignment_5\\assignement_05\\GildedRose.Tests\\GildedRose.Tests.csproj",
+  "projectFilePath": "c:\\Users\\simon\\OneDrive\\Skrivebord\\3_semester\\BGSA\\assignment_5\\assignement_05\\GildedRose.Tests\\GildedRose.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\simon\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\simon\\.nuget\\packages\\coverlet.msbuild\\3.1.0\\coverlet.msbuild.3.1.0.nupkg.sha512",

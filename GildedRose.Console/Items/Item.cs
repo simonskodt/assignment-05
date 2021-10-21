@@ -1,11 +1,18 @@
-namespace Items.Item
+using Items.Interface;
+
+namespace Items.GeneralItem
 {
     public class Item
     {
-        protected string name;
-        protected int sellIn;
-        protected int quality;
-        
-        protected virtual void UpdateQuality() {}
+        public string Name { get; set; }
+
+        public int SellIn { get; set; }
+
+        public int Quality { get; set; }
+
+        public override string ToString() 
+        {
+            return this.Name + ", " + this.SellIn + ", " + this.Quality;
+        }    
     }
 }
