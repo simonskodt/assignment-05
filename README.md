@@ -1,8 +1,9 @@
 # Assignment #5
 
-Task to be completed by us<br>
-[x] Build up a test suite<br>
-[ ] Complete refactoring.
+**_Task to be completed by us_**  
+- [x] Build up a test suite.  
+- [x] Complete refactoring.   
+- [ ] Create other solutions (mabye better).  
 
 ## C#: Gilded Rose Refactoring Kata
 
