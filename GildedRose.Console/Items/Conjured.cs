@@ -1,24 +1,22 @@
 using Items.Interface;
 using Items.GeneralItem;
+using Items;
 
 namespace Items
 {
     public class Conjured : Normal
     {
-        public Conjured(Item item): base(item)
-        {
-
-        }
+        public Conjured(Item item): base(item) { }
 
         public override void UpdateQuality()
         {
-            --_item.SellIn;
+            --item.SellIn;
 
-            if (_item.SellIn > 0) 
-                --_item.Quality;
+            if (item.SellIn > 0) 
+                --item.Quality;
 
             else
-                _item.Quality -= 2;
+                item.Quality -= 2;
         }
     }
 }

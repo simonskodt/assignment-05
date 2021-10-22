@@ -5,22 +5,20 @@ namespace Items
 {
     public class Normal : IItem
     {
-        Item _item;
+        protected Item item;
 
         public Normal(Item item)
         {
-            _item = item;
+            this.item = item;
         }
 
         public virtual void UpdateQuality() 
         {
-            --_item.SellIn;
+            --item.SellIn;
 
-            if (_item.SellIn > 0) _item.Quality -= 2;
+            if (item.SellIn > 0) item.Quality -= 2;
 
-            else _item.Quality -= 4;
+            else item.Quality -= 4;
         }
-
-        
     }
 }

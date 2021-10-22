@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Items;
 using Items.GeneralItem;
 using Items.Interface;
+using System.Linq;
 
 namespace Items.Factory
 {
@@ -24,15 +25,17 @@ namespace Items.Factory
             allItems.Add(CONJURED, new Conjured(item));
         }
 
+        
+
         public IItem HandleItem(Item item) 
         {
             if (IsNormalItem(item)) return new Normal(item);
-            return allItems.GetValueOrDefault(item);
+            return (IItem) allItems.Select(v => v.Value.Equals(item.Name));
         }
 
         bool IsNormalItem(Item item) 
         {
-            return !allItems.ContainsValue(item.Name);
+            return !allItems.Any(v => v.Value.Equals(item.Name));
         }
     }
 }

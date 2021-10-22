@@ -6061,11 +6061,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\simon\\OneDrive\\Skrivebord\\3_semester\\BGSA\\assignment_5\\assignement_05\\GildedRose.Tests\\GildedRose.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\simon\\OneDrive\\Skrivebord\\3_semester\\BGSA\\assignment_5\\assignement_05\\GildedRose.Tests\\GildedRose.Tests.csproj",
       "projectName": "GildedRose.Tests",
-      "projectPath": "c:\\Users\\simon\\OneDrive\\Skrivebord\\3_semester\\BGSA\\assignment_5\\assignement_05\\GildedRose.Tests\\GildedRose.Tests.csproj",
+      "projectPath": "C:\\Users\\simon\\OneDrive\\Skrivebord\\3_semester\\BGSA\\assignment_5\\assignement_05\\GildedRose.Tests\\GildedRose.Tests.csproj",
       "packagesPath": "C:\\Users\\simon\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\simon\\OneDrive\\Skrivebord\\3_semester\\BGSA\\assignment_5\\assignement_05\\GildedRose.Tests\\obj\\",
+      "outputPath": "C:\\Users\\simon\\OneDrive\\Skrivebord\\3_semester\\BGSA\\assignment_5\\assignement_05\\GildedRose.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\simon\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6080,8 +6080,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "c:\\Users\\simon\\OneDrive\\Skrivebord\\3_semester\\BGSA\\assignment_5\\assignement_05\\GildedRose.Console\\GildedRose.Console.csproj": {
-              "projectPath": "c:\\Users\\simon\\OneDrive\\Skrivebord\\3_semester\\BGSA\\assignment_5\\assignement_05\\GildedRose.Console\\GildedRose.Console.csproj"
+            "C:\\Users\\simon\\OneDrive\\Skrivebord\\3_semester\\BGSA\\assignment_5\\assignement_05\\GildedRose.Console\\GildedRose.Console.csproj": {
+              "projectPath": "C:\\Users\\simon\\OneDrive\\Skrivebord\\3_semester\\BGSA\\assignment_5\\assignement_05\\GildedRose.Console\\GildedRose.Console.csproj"
             }
           }
         }

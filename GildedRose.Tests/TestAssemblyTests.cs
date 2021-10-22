@@ -1,5 +1,6 @@
 ﻿using System;
 using Xunit;
+using Items.GeneralItem;
 using GildedRose.Console;
 using System.Collections.Generic;
 
@@ -63,7 +64,7 @@ namespace GildedRose.Tests
             int expected = 7;
 
             for (int i = 0; i < 3; i++)
-                _program.UpdateQuality();
+                _program.UpdateItems();
 
             int actual = _program.Items[0].SellIn;
 
@@ -78,7 +79,7 @@ namespace GildedRose.Tests
             short s = 0;
             while (s < 5)
             {
-                _program.UpdateQuality();
+                _program.UpdateItems();
                 s++;
             }
 
@@ -94,7 +95,7 @@ namespace GildedRose.Tests
             _program.Items.Add(item);
 
             for (int i = 0; i < 2; i++)
-                _program.UpdateQuality();
+                _program.UpdateItems();
 
             int actual = _program.Items[6].Quality;
 
@@ -105,7 +106,7 @@ namespace GildedRose.Tests
         public void Quality_of_item_Returns_never_negative()
         {
             for (int i = 0; i < 20; i++)
-                _program.UpdateQuality();
+                _program.UpdateItems();
 
             int actual = _program.Items[4].Quality;
 
@@ -117,7 +118,7 @@ namespace GildedRose.Tests
         {
             int expected = 1;
 
-            _program.UpdateQuality();
+            _program.UpdateItems();
 
             int actual = _program.Items[1].Quality;
 
@@ -130,7 +131,7 @@ namespace GildedRose.Tests
             int expected = 50;
 
             for (int i = 0; i < 100; i++)
-                _program.UpdateQuality();
+                _program.UpdateItems();
 
             int actual = _program.Items[1].Quality;
 
@@ -141,7 +142,7 @@ namespace GildedRose.Tests
         public void Sulfuras_when_sold_when_bought_Returns_same_value_always()
         {
             for (int i = 0; i < 100; i++)
-                _program.UpdateQuality();
+                _program.UpdateItems();
 
             int actual = _program.Items[3].Quality;
 
@@ -154,7 +155,7 @@ namespace GildedRose.Tests
             Item item = new Item {Name = "Aged Brie", SellIn = 10, Quality = 6};
             _program.Items.Add(item);
 
-            _program.UpdateQuality();
+            _program.UpdateItems();
 
             int actual = _program.Items[6].Quality;
 
@@ -167,7 +168,7 @@ namespace GildedRose.Tests
             Item item = new Item {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 10, Quality = 6};
             _program.Items.Add(item);
 
-            _program.UpdateQuality();
+            _program.UpdateItems();
 
             int actual = _program.Items[6].Quality;
 
@@ -180,7 +181,7 @@ namespace GildedRose.Tests
             Item item = new Item {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 5, Quality = 10};
             _program.Items.Add(item);
 
-            _program.UpdateQuality();
+            _program.UpdateItems();
 
             int actual = _program.Items[6].Quality;
 
@@ -193,7 +194,7 @@ namespace GildedRose.Tests
             Item item = new Item {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 0, Quality = 3};
             _program.Items.Add(item);
 
-            _program.UpdateQuality();
+            _program.UpdateItems();
 
             int actual = _program.Items[6].Quality;
 
@@ -207,7 +208,7 @@ namespace GildedRose.Tests
             _program.Items.Add(item);
 
             for (int i = 0; i < 3; i++)
-                _program.UpdateQuality();
+                _program.UpdateItems();
 
             int expected = _program.Items[6].Quality;
 
@@ -223,7 +224,7 @@ namespace GildedRose.Tests
             // If not Aged Brie, Backstage and Sulfuras, then do
 
             for (int i = 0; i < 3; i++)
-                _program.UpdateQuality();
+                _program.UpdateItems();
 
             int actual = _program.Items[2].Quality;
 
@@ -236,7 +237,7 @@ namespace GildedRose.Tests
             Item item = new Item {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 10, Quality = 48};
             _program.Items.Add(item);
 
-            _program.UpdateQuality();
+            _program.UpdateItems();
 
             int actual = _program.Items[6].Quality;
 
@@ -249,7 +250,7 @@ namespace GildedRose.Tests
             Item item = new Item {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 10, Quality = 49};
             _program.Items.Add(item);
 
-            _program.UpdateQuality();
+            _program.UpdateItems();
 
             int actual = _program.Items[6].Quality;
 
