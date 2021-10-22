@@ -16,11 +16,13 @@ namespace Items
         {
             --_item.SellIn;
 
-            if (_item.SellIn > 11) ++_item.Quality;
+            ++_item.Quality;
 
-            if (_item.SellIn > 6) _item.Quality += 2;
+            if (_item.SellIn < 11 && _item.SellIn > 5) ++_item.Quality;
+
+            if (_item.SellIn < 6 && _item.SellIn > 0) _item.Quality += 2;
             
-            if (_item.SellIn == 0) _item.Quality = 0;
+            if (_item.SellIn <= 0) _item.Quality = 0;
         }
     }
 }

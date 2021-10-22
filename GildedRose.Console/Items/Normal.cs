@@ -16,9 +16,9 @@ namespace Items
         {
             --item.SellIn;
 
-            if (item.SellIn > 0) item.Quality -= 2;
+            if (item.SellIn >= 0) --item.Quality;
 
-            else item.Quality -= 4;
+            else item.Quality -= 2;
         }
     }
 }

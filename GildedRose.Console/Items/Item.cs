@@ -10,6 +10,7 @@ namespace Items.GeneralItem
 
         public int Quality { get; set; }
 
+        // Not in use
         public override string ToString() 
         {
             return this.Name + ", " + this.SellIn + ", " + this.Quality;

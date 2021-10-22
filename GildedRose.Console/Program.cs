@@ -1,24 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Items;
 using Items.GeneralItem;
 using Items.Interface;
 using Items.Factory;
-
 
 namespace GildedRose.Console
 {
     public class Program
     {
         public IList<Item> Items;
-
-        // Composition
-        IItem _iItem;
-        Normal _normal;
-        Brie _brie;
-        Sulfuras _sulfuras;
-        Backstage _backstage;
-        Conjured _conjured;
 
         public static void Main(string[] args)
         {
@@ -35,12 +25,11 @@ namespace GildedRose.Console
                                 new Item {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 15, Quality = 20},
 				                // this conjured item does not work properly yet
                                 new Item {Name = "Conjured Mana Cake", SellIn = 3, Quality = 6},
-                                // new Item {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 15, Quality = 20},
-                                // new Item {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 10, Quality = 49},
-                                // new Item {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 5, Quality = 49}
+                                new Item {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 15, Quality = 20},
+                                new Item {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 10, Quality = 49},
+                                new Item {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 5, Quality = 49}
                             }
             };
-
 
             for (var i = 0; i < 31; i++)
             {
@@ -60,12 +49,23 @@ namespace GildedRose.Console
             foreach (Item item in Items)
             {
                 GetItems(item).UpdateQuality();
+
+                ConditionsToQuality(item);
             }
         }
 
-        IItem GetItems(Item item) 
+        IItem GetItems(Item item) => 
+            new ItemFactory(item).HandleItem(item);
+
+        void ConditionsToQuality(Item item)
         {
-            return new ItemFactory(item).HandleItem(item);
+            if (item.Quality > 50 && item.Name != "Sulfuras, Hand of Ragnaros") 
+                item.Quality = 50;
+            else if (item.Quality > 80 && item.Name == "Sulfuras, Hand of Ragnaros")
+                item.Quality = 80;
+
+            if (item.Quality < 0) 
+                item.Quality = 0;
         }
     }
 }
