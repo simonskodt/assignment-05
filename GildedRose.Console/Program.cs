@@ -9,7 +9,6 @@ namespace GildedRose.Console
     public class Program
     {
         public IList<Item> Items;
-
         public static void Main(string[] args)
         {
             System.Console.WriteLine("OMGHAI!");
